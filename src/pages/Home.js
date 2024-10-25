@@ -68,7 +68,7 @@ const Home = () => {
           <div className="grid grid-cols-1 md:grid-cols-2 gap-8 mb-8">
             <AnimatedImage 
               src={firstVisitImage} 
-              alt="Haile Selassie's First Visit" 
+              alt="Emperor Haile Selassie's first visit to George Nikolas Brick Factory" 
               caption="Haile Selassie's First Visit: During the opening of the first bricks factory."
             />
             <AnimatedImage 
