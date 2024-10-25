@@ -14,27 +14,27 @@ const Navbar = () => {
         }}
       />
       <nav className="sticky top-0 bg-blue-900 bg-opacity-80 shadow-lg z-10">
-        <div className="container mx-auto px-4 py-6">
-          <div className="flex flex-col items-center mb-6">
-            <div className="relative group mb-4">
+        <div className="container mx-auto px-4 py-4 sm:py-6">
+          <div className="flex flex-col items-center mb-4 sm:mb-6">
+            <div className="relative group mb-2 sm:mb-4">
               <img 
                 src={logo} 
-                alt="George Nikolaos Bricks Factory Logo" 
-                className="h-20 w-auto transition-transform duration-300 transform group-hover:scale-110 filter drop-shadow-lg"
+                alt="George Nikolas Bricks Factory Logo" 
+                className="h-16 sm:h-20 w-auto transition-transform duration-300 transform group-hover:scale-110 filter drop-shadow-lg"
                 style={{ pointerEvents: 'none' }}
                 onContextMenu={(e) => e.preventDefault()}
               />
             </div>
-            <div className="text-white text-3xl font-bold text-center font-serif tracking-wide">
-              George Nikolaos Bricks Factory
+            <div className="text-white text-2xl sm:text-3xl font-bold text-center font-serif tracking-wide">
+              George Nikolas Bricks Factory
             </div>
           </div>
-          <ul className="flex justify-center space-x-8 text-white text-lg font-semibold font-serif">
+          <ul className="flex flex-wrap justify-center space-x-4 sm:space-x-8 text-white text-base sm:text-lg font-semibold font-serif">
             {['Home', 'What We Sell', 'About', 'Contact'].map((item) => (
-              <li key={item} className="relative group">
+              <li key={item} className="relative group mb-2">
                 <Link 
                   to={item === 'Home' ? '/' : `/${item.toLowerCase().replace(/\s+/g, '-')}`} 
-                  className="text-white transition-all duration-300 hover:text-gray-300 py-2 px-4 rounded-lg hover:bg-blue-700 hover:bg-opacity-50"
+                  className="text-white transition-all duration-300 hover:text-gray-300 py-1 px-2 sm:py-2 sm:px-4 rounded-lg hover:bg-blue-700 hover:bg-opacity-50"
                 >
                   {item}
                   <span className="absolute left-0 bottom-0 w-full h-0.5 bg-white transform scale-x-0 transition-transform duration-300 origin-left group-hover:scale-x-100"></span>
