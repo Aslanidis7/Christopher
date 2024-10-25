@@ -1,6 +1,6 @@
-@tailwind base;
-@tailwind components;
-@tailwind utilities;
+@import 'tailwindcss/base';
+@import 'tailwindcss/components';
+@import 'tailwindcss/utilities';
 
 /* Custom global styles */
 body, #root {
@@ -8,20 +8,40 @@ body, #root {
 }
 
 body {
-  @apply bg-gradient-to-r from-blue-100 to-blue-200 text-gray-900 transition-all duration-300;
+  background-image: linear-gradient(to right, var(--tw-gradient-stops));
+  --tw-gradient-from: #dbeafe;
+  --tw-gradient-to: #bfdbfe;
+  --tw-gradient-stops: var(--tw-gradient-from), var(--tw-gradient-to);
+  color: #111827;
+  transition-property: all;
+  transition-timing-function: cubic-bezier(0.4, 0, 0.2, 1);
+  transition-duration: 300ms;
   font-family: 'Times New Roman', Times, serif;
 }
 
 h1, h2, h3, h4, h5, h6 {
-  @apply font-extrabold text-blue-900 font-serif;
+  font-weight: 800;
+  color: #1e3a8a;
+  font-family: 'Times New Roman', Times, serif;
 }
 
 p, li, span {
-  @apply text-lg text-gray-700 font-serif;
+  font-size: 1.125rem;
+  line-height: 1.75rem;
+  color: #374151;
+  font-family: 'Times New Roman', Times, serif;
 }
 
 a {
-  @apply text-blue-600 hover:text-blue-400 transition-colors duration-300 font-serif;
+  color: #2563eb;
+  transition-property: color;
+  transition-timing-function: cubic-bezier(0.4, 0, 0.2, 1);
+  transition-duration: 300ms;
+  font-family: 'Times New Roman', Times, serif;
+}
+
+a:hover {
+  color: #60a5fa;
 }
 
 code {
