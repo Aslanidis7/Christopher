@@ -1,6 +1,7 @@
 import React, { useEffect, useState } from 'react';
 import nikolasImage from '../images/Nikolas.png';
 import { Helmet } from 'react-helmet';
+import Footer from '../components/Footer';
 
 const AnimatedFounderImage = ({ src, alt }) => {
   const [isVisible, setIsVisible] = useState(false);
@@ -78,6 +79,7 @@ const About = () => {
             </p>
           </div>
         </div>
+        <Footer />
       </div>
     </>
   );

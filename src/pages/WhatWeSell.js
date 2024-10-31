@@ -5,6 +5,7 @@ import ClayCourtImage from '../images/Clay_court.jpeg';
 import Bricks4 from '../images/Bricks4.jpg';
 import Bricks5 from '../images/Bricks5.jpg';
 import Brick6 from '../images/Brick6.jpg';
+import Footer from '../components/Footer';
 
 const ProductImage = ({ src, alt }) => (
   <div className="relative group overflow-hidden rounded-lg shadow-lg transition-all duration-300 hover:shadow-2xl">
@@ -50,6 +51,7 @@ const WhatWeSell = () => {
             Our tennis red sand is ideal for creating high-quality sports surfaces, particularly for tennis courts. It provides excellent playing conditions and is also suitable for various other construction applications.
           </p>
         </div>
+        <Footer />
       </div>
     </div>
   );

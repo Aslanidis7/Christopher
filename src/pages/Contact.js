@@ -1,5 +1,6 @@
 import React, { useEffect, useState } from 'react';
 import randomImage from '../images/Random.JPG';
+import Footer from '../components/Footer';
 
 const Contact = () => {
   const [fade, setFade] = useState(false);
@@ -49,6 +50,7 @@ const Contact = () => {
             </div>
           </div>
         </div>
+        <Footer />
       </div>
     </div>
   );

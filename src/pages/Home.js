@@ -1,6 +1,7 @@
 import React, { useEffect, useState } from 'react';
 import firstVisitImage from '../images/1st_visit.JPG';
 import secondVisitImage from '../images/2nd_visit.JPG';
+import Footer from '../components/Footer';
 
 const AnimatedImage = ({ src, alt, caption }) => {
   const [isVisible, setIsVisible] = useState(false);
@@ -90,6 +91,7 @@ const Home = () => {
             </ul>
           </div>
         </div>
+        <Footer />
       </div>
     </div>
   );
